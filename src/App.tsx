@@ -2,7 +2,7 @@ import { Bello } from 'components/Bello'
 
 const App = () => {
   return (
-    <div className="">
+    <div className="text-blue-500">
       bello!
       <Bello></Bello>
     </div>
