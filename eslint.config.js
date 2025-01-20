@@ -6,7 +6,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 import eslintConfigPrettier from 'eslint-config-prettier'
 import tseslint from 'typescript-eslint'
 import eslintPluginImportX from 'eslint-plugin-import-x'
-import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript'
+import * as tsResolver from 'eslint-import-resolver-typescript'
 
 export default tseslint.config(
   { ignores: ['dist'] },
@@ -29,12 +29,11 @@ export default tseslint.config(
       },
     },
     settings: {
-      'import/resolver-next': [
-        createTypeScriptImportResolver({
-          alwaysTryTypes: true, // always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`
-          project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        }),
-      ],
+      'import-x/resolver': {
+        name: 'tsResolver',
+        resolver: tsResolver,
+        options: { project: ['./tsconfig.node.json', './tsconfig.app.json'] },
+      },
     },
     plugins: {
       react,
