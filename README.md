@@ -8,3 +8,4 @@ These are the things that was added to this project in addition to the original 
 - prettier
 - `eslint-import-import-x` and `eslint-import-resolver-typescript` for import linting
 - nvmrc
+- jest and react testing library

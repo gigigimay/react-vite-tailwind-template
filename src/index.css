@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import 'tailwindcss';
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@plugin 'daisyui' {
+  themes: silk --default;
+}
 
 @layer components {
 }
 
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Noto Sans Thai', serif;
 }
