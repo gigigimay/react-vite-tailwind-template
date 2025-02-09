@@ -1,3 +1,3 @@
 export const Bello = () => {
-  return <div>BELLO COMPONENT!</div>
+  return <div className="text-lg font-bold text-teal-600">BELLO COMPONENT!</div>
 }
