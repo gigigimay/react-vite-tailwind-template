@@ -1,7 +1,5 @@
 @import 'tailwindcss';
-
-@layer components {
-}
+@plugin 'daisyui';
 
 body {
   font-family: 'Noto Sans Thai', serif;

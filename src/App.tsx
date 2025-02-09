@@ -5,6 +5,7 @@ const App = () => {
     <div className="p-4">
       bello APP!
       <Bello></Bello>
+      <button className="btn btn-primary">Daisy Button</button>
     </div>
   )
 }
